@@ -1,0 +1,57 @@
+
+.exploreSection{
+    padding: 70px 0;
+}
+
+.exploreContainer{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.exploreContainer h4{
+    color: #DB4444;
+    border-left: 5px solid #DB4444;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.flexbox h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons button{
+    border-radius: 50%;
+    border: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.buttons button:hover{
+    background-color: #DB4444;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.btnDiv{
+    width: 100%;
+    text-align: center;
+}

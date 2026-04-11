@@ -1,0 +1,138 @@
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.pagePath {
+  margin-bottom: 80px;
+  font-size: 14px;
+}
+.pagePath span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.tableHeader {
+  padding: 24px 40px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  align-items: center;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.08);
+}
+
+.singleCartProduct {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 24px 40px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.08);
+}
+.singleCartProduct input {
+  height: 50px;
+  width: 80px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(0, 0, 0, 0.4);
+}
+.qty button {
+  border: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.imageWrapper button {
+  background: none;
+  border: 0;
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(100, 99, 99);
+  cursor: pointer;
+}
+.imageWrapper img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+.returnBtn {
+  padding: 16px 48px;
+  background: none;
+  border: 1px solid #00000080;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.returnBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.couponWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.couponInput {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+.couponInput input {
+  padding: 0 30px;
+  width: 50%;
+}
+
+.cartTotal {
+  border: 1px solid black;
+  padding: 32px 24px;
+  flex: 0.5;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.columns .column {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.301);
+  padding: 10px 0;
+}

@@ -1,0 +1,151 @@
+.lastSection {
+  padding: 80px 0;
+}
+
+.lastContainer {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.lastContainer h4 {
+  color: #db4444;
+  border-left: 5px solid #db4444;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.lastContainer h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.leftPhoto {
+  background: #000000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.textOnImage {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  max-width: 260px;
+}
+.textOnImage h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.textOnImage p {
+  font-size: 14px;
+  font-weight: 300;
+  
+}
+
+.textOnImage a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.textOnImage a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.textOnImage a:hover::after {
+  width: 100%;
+}
+
+.rightPhoto {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  
+
+}
+
+.rightPhoto .woman {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(13, 13, 13);
+  position: relative;
+  border-radius: 4px;
+  
+}
+.woman img{
+    border-radius: 4px;
+}
+
+.bottomRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.rightPhoto .speakers,
+.rightPhoto .perfume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #636363;
+  background: radial-gradient(
+    circle,
+    rgba(99, 99, 99, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: relative;
+  border-radius: 4px;
+}
+
+.ourService {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.service p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.service span{
+    font-size: 14px;
+    font-weight: 400;
+}

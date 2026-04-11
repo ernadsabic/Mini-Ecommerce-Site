@@ -1,0 +1,91 @@
+
+.categoriesSection{
+    padding: 80px 0;
+}
+
+.categoriesContainer{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.categoriesContainer h4{
+    color: #DB4444;
+    border-left: 5px solid #DB4444;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.flexBox h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons button{
+    border-radius: 50%;
+    border: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.buttons button:hover{
+    background-color: #DB4444;
+}
+
+.categoriesWrapper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    
+
+}
+.categoryDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 55px;
+    flex: 1;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: black;
+  
+}
+.categoryDiv:hover{
+    background: #DB4444;
+}
+.categoryDiv:hover .icon{
+    color: white;
+}
+.categoryDiv:hover span{
+    color: white;
+}
+.icon{
+    color: black;
+}
+
+.borderBottom{
+    height: 1px;
+    max-width: 1700px;
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,28 @@
+
+.countWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.countFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.countLabel{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.countTime{
+    font-size: 34px;
+    font-weight: bold;
+    
+}
+
+.dots{
+    font-size: 35px;
+    color: #E07575;
+}

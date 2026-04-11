@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.heroContainer{
+    max-width: 1700px;
+    margin: 0 auto;
+    
+}
+
+
+.heroWrapper{
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+    
+}
+.heroAside{
+    flex: 0 0 15%; /*  grow,shrink,i duzina,|| da ne bi piso  ovdje width 15% pa main 85% uradim ovo*/
+    padding-top: 40px;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.24);
+    
+}
+
+main{
+    flex: 1;   /* zauzima sav ostali prostor tj obzirom da je aside 15% on zauzima ostalih 85%*/
+    padding-left: 40px;
+    padding-top: 40px;
+
+}
+
+.heroImage{
+  background-color: black;
+  padding: 20px 0;
+}
+.flexbox{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+   
+}
+
+.heroUl{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroUl li{
+    list-style: none;
+}
+
+.heroUl li .sidebarLink{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.heroUl li .sidebarLink:hover{
+    color: #ff6600;
+}
+
+.appleLogo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    
+}
+.appleLogo img{
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+    
+}
+.appleLogo p{
+    color: #FAFAFA;
+    font-weight: 100;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    gap: 35px;
+    
+
+}
+
+.leftSide .bigText{
+    color: #FAFAFA;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    max-width: 315px;
+    
+}
+
+.ctaDiv{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+.ctaDiv:hover{
+    transform:scale(1.1);
+}
+
+
+.ctaHero{
+    position: relative;
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    
+  
+}
+
+.ctaHero::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.ctaHero:hover::after{
+    width: 100%;
+}
+
+
+.rightSide img{
+    object-fit: cover;
+    width: 500px;
+    height: 350px;
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    
+}
+
+.dots .dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    
+}
+
+.dot.active{
+    background-color: #DB4444;
+    border: 2px solid white;
+}

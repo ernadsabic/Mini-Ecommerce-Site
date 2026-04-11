@@ -1,0 +1,45 @@
+.section {
+  padding: 70px 0;
+}
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.flexbox h2 {
+  font-size: 36px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons button {
+  border-radius: 50%;
+  border: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.buttons button:hover{
+    background-color: #DB4444;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}

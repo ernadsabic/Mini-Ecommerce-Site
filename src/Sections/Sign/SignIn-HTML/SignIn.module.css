@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formHeader h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.formHeader p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.inputs input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.inputs input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.already {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.already p {
+  opacity: 70%;
+}
+.createAcc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.linkBtn {
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(96, 29, 158);
+  font-size: 16px;
+}
+
+.logErr {
+  color: tomato;
+  font-size: 14px;
+}

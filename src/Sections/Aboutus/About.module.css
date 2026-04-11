@@ -1,0 +1,140 @@
+.section {
+  padding: 80px 0;
+  padding-left: calc((100vw - 1700px) / 2);
+  
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  margin-bottom: 140px;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+.heroText h1 {
+  font-size: 54px;
+  font-weight: bold;
+}
+.heroText p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.heroImage {
+  flex: 1;
+}
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categoriesWrapper {
+  max-width: 1700px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.categoryDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 55px;
+  flex: 1;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.categoryDiv:hover {
+  background: #db4444;
+}
+.categoryDiv:hover .icon {
+  color: white;
+}
+.categoryDiv:hover h2,
+.categoryDiv:hover span {
+  color: white;
+}
+.icon {
+  color: black;
+}
+.categoryDiv h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+.categoryDiv span{
+  font-size: 16px;
+}
+
+
+.employees{
+  max-width: 1700px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+  border-bottom: 0.5px solid rgba(175, 164, 164, 0.315);
+}
+.employee{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  flex: 1;
+}
+.imageWrapper{
+  padding: 69px 47px 0 47px;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.textWrapper h2{
+  font-size: 32px;
+  font-weight: 500;
+}
+.icons{
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.ourService {
+  max-width: 1700px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.service p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.service span{
+    font-size: 14px;
+    font-weight: 400;
+}
