@@ -19,7 +19,7 @@ import { Footer } from "./Components/Footer/Footer";
 import Categories from "./Pages/Categories";
 import ProfilePage from "./Pages/ProfilePage";
 import CheckoutPage from "./Pages/CheckoutPage";
-import SearchPage from "./Pages/SearchPage"
+import SearchPage from "./Pages/SearchPage";
 
 function App() {
   const navigate = useNavigate();
@@ -39,6 +39,7 @@ function App() {
     <>
       <PreHeader />
       <Navbar currentUser={currentUser} />
+
       <Routes>
         <Route
           path="/"

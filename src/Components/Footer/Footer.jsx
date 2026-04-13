@@ -6,6 +6,7 @@ import FacebookIco from './facebook.svg';
 import InstagramIco from './instagram.svg';
 import TwitterIco from './twitter.svg';
 import LinkedinIco from './linkedin.svg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,11 +29,11 @@ export const Footer = () => {
                     </div>
                     <div className="footer-col">
                         <h3>Account</h3>
-                        <a>My account</a>
+                        <Link to="/profile">My account</Link>
                         <a>Login/Register</a>
-                        <a>Cart</a>
-                        <a>Wishlist</a>
-                        <a>Shop</a>
+                        <Link to="/cart">Cart</Link>
+                        <Link to="/wishlist">Wishlist</Link>
+                        <Link to="/products">Shop</Link>
                     </div>
                     <div className="footer-col">
                         <h3>Quick Link</h3>

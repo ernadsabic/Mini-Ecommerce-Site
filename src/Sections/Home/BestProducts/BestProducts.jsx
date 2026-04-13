@@ -5,8 +5,10 @@ import { useCountdown } from "../../../Hooks/useCountdown";
 import { Link } from "react-router-dom";
 import JBL from "./jbl.png";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const BestProducts = () => {
+  const navigate = useNavigate();
   const { time } = useCountdown();
   const [products, setProducts] = useState([]);
 
@@ -67,7 +69,7 @@ export const BestProducts = () => {
                   <span className={styles.timeLabel}>Seconds</span>
                 </div>
               </div>
-              <Button text="Buy Now!" />
+              <Button text="Buy Now!"  onClick={()=>navigate('/search/Speaker')}  />
             </div>
             <div className={styles.rightSide}>
               <img src={JBL} alt="JBL Speaker Image" />

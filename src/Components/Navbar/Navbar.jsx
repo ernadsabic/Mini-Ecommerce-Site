@@ -76,8 +76,9 @@ export const Navbar = ({ currentUser }) => {
                 placeholder="What are you looking for?"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && searchProduct()}
               />
-              <button onClick={searchProduct} type="submit">
+              <button onClick={searchProduct} type="button">
                 <img src={SearchIcon} alt="" />
               </button>
             </div>

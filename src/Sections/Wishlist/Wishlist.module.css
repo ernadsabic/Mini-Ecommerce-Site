@@ -1,28 +1,38 @@
-.section{
-    padding: 80px 0;
+.section {
+  padding: 80px 0;
 }
-.container{
-    max-width: 1700px;
-    margin: 0 auto;
-} 
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
 
-.flexBox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
 }
-.flexBox span{
-    font-size: 25px;
+.flexBox span {
+  font-size: 25px;
 }
-.flexBox button{
-    padding: 16px 48px;
-    background: none;
-    border: 1px solid #00000080;
-    border-radius: 4px;
+.flexBox button {
+  padding: 16px 48px;
+  background: none;
+  border: 1px solid #00000080;
+  border-radius: 4px;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.empty_wishlist {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }

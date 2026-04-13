@@ -19,14 +19,6 @@ export const Categories = () => {
           <h4>Categories</h4>
           <div className={styles.flexBox}>
             <h2>Browse By Category</h2>
-            <div className={styles.buttons}>
-              <button>
-                <img src={Right} alt="Right Slide" />
-              </button>
-              <button>
-                <img src={Left} alt="Left Slide" />
-              </button>
-            </div>
           </div>
 
           {/* CATEGORIES LIST */}
@@ -35,7 +27,10 @@ export const Categories = () => {
               <Computer className={styles.icon} />
               <span>Computer</span>
             </Link>
-            <Link to="/category/mobile-accessories" className={styles.categoryDiv}>
+            <Link
+              to="/category/mobile-accessories"
+              className={styles.categoryDiv}
+            >
               <Camera className={styles.icon} />
               <span>Camera</span>
             </Link>
@@ -47,7 +42,10 @@ export const Categories = () => {
               <Smartwatch className={styles.icon} />
               <span>Watch</span>
             </Link>
-            <Link to="/category/mobile-accessories" className={styles.categoryDiv}>
+            <Link
+              to="/category/mobile-accessories"
+              className={styles.categoryDiv}
+            >
               <Headphones className={styles.icon} />
               <span>Headphones</span>
             </Link>

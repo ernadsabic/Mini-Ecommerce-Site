@@ -8,7 +8,7 @@ import useGetProducts from "../../../Hooks/useGetProducts";
 
 export const Explore = () => {
   const { products } = useGetProducts();
-  
+
   return (
     <>
       <section className={styles.exploreSection}>
@@ -17,15 +17,6 @@ export const Explore = () => {
 
           <div className={styles.flexbox}>
             <h2>Explore Our Products</h2>
-
-            <div className={styles.buttons}>
-              <button>
-                <img src={Right} alt="Right Slide" />
-              </button>
-              <button>
-                <img src={Left} alt="Left Slide" />
-              </button>
-            </div>
           </div>
           <div className={styles.grid}>
             {products.slice(4, 12).map((product) => (
