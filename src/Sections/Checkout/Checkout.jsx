@@ -3,14 +3,29 @@ import styles from "./checkout.module.css";
 import { CartContext } from "../../Context/CartProvider";
 import { useContext } from "react";
 import { Button } from "../../Components/Button/Button";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
 const Checkout = () => {
   const { cartProducts } = useContext(CartContext);
+  const navigate = useNavigate();
 
   const total = cartProducts.reduce(
     (acc, cp) => acc + Number(cp.price * cp.qty),
     0
   );
   const subtotal = cartProducts.reduce((acc, cp) => acc + Number(cp.price), 0);
+
+  function placeOrder() {
+    toast.success(
+      `Order confirmed!
+      Thanks for your purchase. We’ll send you an update as soon as your order ships.`,
+      {
+        duration: 5000,
+      } 
+    );
+    navigate("/");
+  }
 
   return (
     <>
@@ -60,7 +75,9 @@ const Checkout = () => {
               </div>
               <div className={styles.checkBox}>
                 <input type="checkbox" />
-                <label htmlFor="">Save this information for faster check-out next time</label>
+                <label htmlFor="">
+                  Save this information for faster check-out next time
+                </label>
               </div>
             </form>
             <div className={styles.rightSide}>
@@ -80,12 +97,12 @@ const Checkout = () => {
               </div>
               <div className={styles.radioInput}>
                 <div>
-                  <input type="radio" />
+                  <input type="radio" name="option" />
                   <label htmlFor="">Bank</label>
                 </div>
 
                 <div>
-                  <input type="radio" checked />
+                  <input type="radio" name="option" />
                   <label htmlFor="">Cash on delivery</label> <br />
                 </div>
               </div>
@@ -93,7 +110,7 @@ const Checkout = () => {
                 <input type="number" placeholder="Coupon Code" />
                 <Button text="Apply Coupon" />
               </div>
-              <Button text="Place order"/>
+              <Button text="Place order" onClick={placeOrder} />
             </div>
           </div>
         </div>

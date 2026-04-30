@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Wishlist = () => {
   const { products } = useGetWishlist();
   const navigate = useNavigate();
-
+  
   return (
     <>
       <section className={styles.section}>

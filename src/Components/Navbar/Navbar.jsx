@@ -27,6 +27,7 @@ export const Navbar = ({ currentUser }) => {
   async function handleSignOut() {
     try {
       await signOut(auth);
+      setIsOpen(false);
       <Navigate to="/sign" replace />;
     } catch (error) {
       console.error(error);

@@ -1,4 +1,5 @@
 import './preheader.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -10,7 +11,7 @@ export const PreHeader = () => {
                     <div className="flexWrapper">
                         <div className="text">
                             <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                            <a href="/">ShopNow</a>
+                            <Link to="/products">ShopNow</Link>
                         </div>
                         <div className="language">
                             <select name="language">

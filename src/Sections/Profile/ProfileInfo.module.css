@@ -42,7 +42,6 @@
   padding: 80px 50px;
   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-
 }
 
 .formFlex {
@@ -50,7 +49,6 @@
   align-items: center;
   gap: 50px;
   margin-bottom: 24px;
-  
 }
 .formFlex input {
   width: 100%;
@@ -64,6 +62,10 @@
 }
 .inputDiv {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 .passwordInputs {
   display: flex;
