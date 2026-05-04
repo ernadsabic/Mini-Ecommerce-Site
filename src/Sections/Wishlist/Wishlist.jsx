@@ -4,17 +4,24 @@ import { ProductCard } from "../../Components/Product Card/ProductCard";
 import useGetWishlist from "../../Hooks/WishlistHooks/useGetWishlist";
 import { Button } from "../../Components/Button/Button";
 import { useNavigate } from "react-router-dom";
+import { CartContext } from "../../Context/CartProvider";
 const Wishlist = () => {
   const { products } = useGetWishlist();
   const navigate = useNavigate();
-  
+  const { addToCart } = useContext(CartContext);
+
+  const moveAllToBag = () => {
+    products.forEach(p => {
+      addToCart(p,1)
+    });
+  };
   return (
     <>
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.flexBox}>
             <span>{`Wishlist (${products.length})`}</span>
-            <button>Move All To Bag</button>
+            <button onClick={moveAllToBag}>Move All To Bag</button>
           </div>
 
           {products.length === 0 ? (
