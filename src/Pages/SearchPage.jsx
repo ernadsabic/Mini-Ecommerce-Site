@@ -1,9 +1,12 @@
-import React from 'react'
-import Search from '../Sections/SearchedProducts/Search'
-const SearchPage = () => {
-  return (
-    <Search/>
-  )
-}
+import React from "react";
+import Search from "../Sections/SearchedProducts/Search";
+import { Navigate } from "react-router-dom";
 
-export default SearchPage
+const SearchPage = ({ currentUser }) => {
+  if (!currentUser) {
+    return <Navigate to="/sign" replace />;
+  }
+  return <Search />;
+};
+
+export default SearchPage;

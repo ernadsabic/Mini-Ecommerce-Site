@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
 import styles from "./Product.module.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Rating from "./Images/FourStar.svg";
 import Heart from "./Images/Heart.svg";
 import Delivery from "./Images/icon-delivery.svg";
@@ -8,15 +8,14 @@ import Return from "./Images/icon-return.svg";
 import { CartContext } from "../../Context/CartProvider";
 import { useAddWishlist } from "../../Hooks/WishlistHooks/useAddWishlist";
 
-
 const Product = () => {
-
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [reviews, setReviews] = useState(0);
   const { addToCart } = useContext(CartContext);
   const { addToWishList } = useAddWishlist();
   const [qty, setQty] = useState(1);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProduct();
@@ -104,7 +103,10 @@ const Product = () => {
                   </button>
                 </div>
                 <button
-                  onClick={() => addToCart(product, qty)}
+                  onClick={() => {
+                    addToCart(product, qty);
+                    navigate("/cart");
+                  }}
                   className={styles.buttonBuy}
                 >
                   Buy now

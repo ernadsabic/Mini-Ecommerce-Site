@@ -8,7 +8,7 @@ export const useCountdown = () => {
 
 
     useEffect(()=>{
-        const target = new Date('2026-05-30T12:00:00');
+        const target = new Date('2027-03-30T12:00:00');
 
         const interval = setInterval(()=>{
             const now = new Date();

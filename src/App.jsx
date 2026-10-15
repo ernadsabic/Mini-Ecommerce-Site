@@ -7,7 +7,6 @@ import { Routes, Route } from "react-router-dom";
 import { auth } from "./Configs/firebaseCfg";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 import CheckAuth from "./Pages/CheckAuth";
 import WishlistPage from "./Pages/WishlistPage";
 import CartPage from "./Pages/CartPage";
@@ -20,18 +19,30 @@ import Categories from "./Pages/Categories";
 import ProfilePage from "./Pages/ProfilePage";
 import CheckoutPage from "./Pages/CheckoutPage";
 import SearchPage from "./Pages/SearchPage";
+import { useLocation } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function App() {
-  const navigate = useNavigate();
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user || null);
+      setLoading(false);
     });
 
     return () => unsub();
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!currentUser && location.pathname !== "/sign") {
+    return <Navigate to="/sign" replace />;
+  }
 
   console.log(auth?.currentUser?.email);
 

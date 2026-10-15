@@ -12,11 +12,19 @@ import { signOut } from "firebase/auth";
 import { auth } from "../../Configs/firebaseCfg";
 import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export const Navbar = ({ currentUser }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
+
+  const location = useLocation();
+  const pathname = location.pathname;
+
+  if(pathname === "/sign") {
+    return null;
+  }
 
   function searchProduct() {
     if (searchValue.trim() === "") return;
